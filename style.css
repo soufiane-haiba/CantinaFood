@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+
+section{
+    margin-top: 70px;
+}
+
+.logo a img{
+    width: 9rem;
+}
+
+body{
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 90%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    box-shadow: 0 0 10px white;
+    z-index: 10;
+}
+
+.navbar-container{
+    display: flex;
+    gap: 100px;
+}
+
+.navbar-container li{
+    margin: 0 15px;
+    list-style: none;
+}
+
+.navbar-container li a{
+    font-size: 20px;
+    text-decoration: 0;
+    color: white;
+    position: relative;
+}
+
+.navbar-container li a::before{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.navbar-container li a:hover::before{
+    width: 100%;
+}
+
+
+/* ================= Home page ==================== */
+
+.container-home{
+    padding-top: 120px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.left h1{
+    color: white;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.left p{
+    color: white;
+    margin-top: 25px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+
+}
+
+.right img{
+    width: 360px;
+}
+
+.check-menu{
+    padding: 0;
+    background-color:white;
+    color: black;
+    border-radius: 6px;
+    font-size: 23px;
+    line-height: 45px;
+    width: 204px;
+    gap: 30px;
+    margin-top: 83px;
+}
+
+.check-menu:hover{
+    background-color: black;
+    color: white;
+    border: solid  white 2px;
+    cursor: pointer;
+}
+
+.about-img{
+    width: 320px;
+    border:white 2px solid;
+    border-radius: 4px;
+}
+
+
+
+.container-dishes{
+    background-color: black;
+    padding-bottom: 40px;
+}
+
+.container-dishes h1{
+    text-align: center;
+    color: white;
+}
+
+.cadres{
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.cadres h2{
+    color: white;
+    text-align: center;
+}
+
+/* ===================footer==================== */
+.footer-container{
+    display: flex;
+}
+
+.footer-logo img{
+    width: 210px;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 250px;
+    background-color: white;
+    position: relative;
+}
+
+.footer-txt{
+    margin-left: -59px;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.quick-links{
+    display: flex;
+}
+
+.quick-links-txt{
+    padding-left: 185px;
+    padding-top: 115px;
+}
+
+.footer-logo{
+    padding-top: 115px;
+    padding-left: 200px;
+}
+
+.footer-title h1{
+    font-size: 64px;
+}
+.quick-links{
+    font-family: 'Gabarito', sans-serif;
+    padding-top: 48px;
+}
+.quick-links div{
+    padding-right: 70px;
+}
+.quick-links ul{
+    list-style: none;
+}
+.quick-links li{
+    padding-bottom: 20px;
+}
+
+.copyright{
+
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+
+.quick-links a{
+    color: black;
+    text-decoration: none;
+}
+
+.form-control{
+    padding-left: 10px;
+    width: 100%;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.form-control-area{
+    width: 100%;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 10px 0px;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.button-submit{
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.news-letter{
+    padding-left: 185px;
+    padding-top: 115px;
+}
+
+.button-submit:hover{
+    background-color: white;
+    color: black;
+    border: solid  black 2px;
+    cursor: pointer;
+}
+/* ==================== */
