@@ -260,3 +260,66 @@ header{
     cursor: pointer;
 }
 /* ==================== */
+
+
+/* =========== Menu Page ============ */
+
+.container-foodmenu{
+    margin-top: 70px;
+    height: 100vh;
+    background-color: black;
+}
+
+.menu-food{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.image-food img{
+    width: 200px;
+    height: 160px;
+}
+
+.container-foodmenu h1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.image-food h2,p{
+    color: white;
+    text-align: center;
+}
+
+
+
+.container-drinksmenu{
+    height: 100vh;
+    background-color: black;
+
+}
+
+.menu-drinks{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.menudrinks-img{
+    width: 200px;
+    height: 230px;
+}
+
+.container-drinksmenu h1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.image-drinks h2,p{
+    color: white;
+    text-align: center;
+}
