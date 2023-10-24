@@ -70,16 +70,29 @@ header{
     width: 100%;
 }
 
+.menuBurger{
+    display: none;
+}
+
 
 /* ================= Home page ==================== */
 
 .container-home{
-    padding-top: 120px;
+    width: 100%;
     height: 100vh;
     background-color: black;
     display: flex;
-    justify-content: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
 }
 
 .left h1{
@@ -96,6 +109,10 @@ header{
 
 }
 
+.right{
+    display: flex;
+    align-items: center;
+}
 .right img{
     width: 360px;
 }
@@ -120,7 +137,7 @@ header{
 }
 
 .about-img{
-    width: 320px;
+    width: 250px;
     border:white 2px solid;
     border-radius: 4px;
 }
@@ -130,18 +147,21 @@ header{
 .container-dishes{
     background-color: black;
     padding-bottom: 40px;
+    height: 100vh;
 }
 
 .container-dishes h1{
     text-align: center;
     color: white;
+    padding: 50px 0;
 }
 
 .cadres{
     display: flex;
-    gap: 60px;
-    margin-top: 50px;
-    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .cadres h2{
@@ -151,42 +171,61 @@ header{
 
 /* ===================footer==================== */
 .footer-container{
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+}
+
+.footerContainer{
+    display: flex;
+}
+
+.footer-logo{
+    width: 50%;
 }
 
 .footer-logo img{
-    width: 210px;
+    width: 250px
 }
 
-.footer-contact{
+footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 250px;
     background-color: white;
     position: relative;
 }
 
 .footer-txt{
-    margin-left: -59px;
+
 }
 
 .footer-container{
     display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
 }
 
 .quick-links{
     display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
 .quick-links-txt{
-    padding-left: 185px;
-    padding-top: 115px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .footer-logo{
-    padding-top: 115px;
-    padding-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .footer-title h1{
@@ -194,10 +233,9 @@ header{
 }
 .quick-links{
     font-family: 'Gabarito', sans-serif;
-    padding-top: 48px;
 }
 .quick-links div{
-    padding-right: 70px;
+
 }
 .quick-links ul{
     list-style: none;
@@ -207,10 +245,8 @@ header{
 }
 
 .copyright{
-
-    position: absolute;
-    top: 75%;
-    left: 40%;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .quick-links a{
@@ -248,10 +284,21 @@ header{
     border-radius: 5px;
 }
 
-.news-letter{
-    padding-left: 185px;
-    padding-top: 115px;
+.formContainer{
+    width: 40%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
 }
+.news-letter{
+    width: 100%;
+}
+
+/* .linksLogo{
+    display: flex;
+    width: 40%;
+    background-color: blue;
+} */
 
 .button-submit:hover{
     background-color: white;
@@ -273,7 +320,7 @@ header{
 .menu-food{
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .image-food img{
@@ -322,4 +369,178 @@ header{
 .image-drinks h2,p{
     color: white;
     text-align: center;
+}
+
+
+
+
+
+.container-team{
+    margin-top: 70px;
+    height: 100vh;
+    background-color: black;
+}
+
+.container-team{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.image-manager{
+    margin-bottom: 15px;
+}
+
+.manager-img{
+    margin: auto;
+    height: 200px;
+}
+
+.container-team h1{
+    margin-bottom: 40px;
+}
+
+.image-chefs{
+    border: 2px white solid;
+}
+
+.chef{
+    width: 200px;
+    height: 230px;
+}
+
+.image-team{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* FAQ */
+
+
+.faq-container{
+    padding: 70px 0;
+    background-color: black;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.faq-container h1{
+    color: white;
+    text-align: center;
+}
+
+.question h3{
+    color: white;
+}
+
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.8rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+/* ======== faq ========== */
+
+
+@media(max-width:400px){
+    .navbar-container{
+        display: none;
+    }
+    .menuBurger{
+        display: block;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .formContainer{
+        padding: 0;
+        margin: auto;
+    }
+
+    .quick-links-txt{
+        width: unset;
+    }
+
+    .footer-logo{
+        width: unset;
+    }
+
+    .container-dishes{
+        padding-top: 265px;
+        height: unset;
+    }
+
+    .menu-food{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-foodmenu{
+        height: unset;
+    }
+
+    .container-drinksmenu{
+        height: unset;
+    }
+
+    .container-team{
+        height: unset;
+    }
+
+    .image-team{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image-chefs{
+        width: 52%;
+        margin: auto;
+    }
+
+    .faq-container{
+        padding: 70px 25px;
+    }
 }
