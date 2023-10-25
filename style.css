@@ -37,6 +37,10 @@ header{
     z-index: 10;
 }
 
+.buttonBurger{
+    display: none;
+}
+
 .navbar-container{
     display: flex;
     gap: 100px;
@@ -480,10 +484,24 @@ svg{
     transition: transform 0.5s ease-in;
 }
 
-/* ======== faq ========== */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
 
+
+
+/* ======== faq ========== */
+.navbar-container.active1{
+    left: 0;
+}
 
 @media(max-width:400px){
+
+    .container-home{
+        height: unset;
+    }
     .navbar-container{
         display: none;
     }
@@ -543,4 +561,30 @@ svg{
     .faq-container{
         padding: 70px 25px;
     }
+
+    /* BurgerMenu */
+
+    .buttonBurger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-container{
+        display: flex;
+        position: fixed;
+        top: 5rem;
+        width: 100%;
+        height: 5vh;
+        left: -100%;
+        background-color: white;
+        gap: 75px;
+    }
+
+    .navbar-container li a {
+        font-size: 20px;
+        text-decoration: 0;
+        color: black;
+        position: relative;
+    }
+
 }

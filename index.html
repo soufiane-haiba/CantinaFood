@@ -27,9 +27,9 @@
             <li><a href="menu.html">Menu</a></li>
             <li><a href="team.html">Team</a></li>
         </ul>
-        <div class="menuBurger">
-            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-        </div>
+        <button type="button" class="buttonBurger">
+            <i class="fa-solid fa-burger" style="color: #fcfcfc; background-color: black;"></i>
+        </button>
     </header>
 
 
@@ -99,23 +99,30 @@
                         </div>
                     </div>
                 </div>
-            <div class="formContainer">
-                <div class="news-letter">
-                    <h2>Contact Us</h2>
-                    <div>
-                        <input type="text" class="form-control" placeholder="First Name*">
+                <div class="formContainer">
+                    <div class="news-letter">
+                      <h2>Contact Us</h2>
+                      <form id="contactForm" onsubmit="return validateForm()">
+                        <div>
+                          <input type="text" class="form-control" id="firstName" placeholder="First Name*">
+                          <div class="error-message" id="firstNameError"></div>
+                        </div>
+                        <div>
+                          <input type="text" class="form-control" id="lastName" placeholder="Last Name*">
+                          <div class="error-message" id="lastNameError"></div>
+                        </div>
+                        <div>
+                          <input type="text" class="form-control" id="emailSubject" placeholder="Email Subject">
+                          <div class="error-message" id="emailSubjectError"></div>
+                        </div>
+                        <div>
+                          <button class="button-submit" type="submit">Submit Email</button>
+                        </div>
+                      </form>
                     </div>
-                    <div>
-                        <input type="text" class="form-control" placeholder="Last Name*">
-                    </div>
-                    <div>
-                        <input type="text" class="form-control" placeholder="Email Subject">
-                    </div>
-                    <div>
-                        <button class="button-submit">Submit Email</button>
-                    </div>
-                </div>
-            </div>
+                  </div>
+                  
+                
         </div>
 
         <div class="copyright">
